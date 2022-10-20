@@ -25,7 +25,7 @@ class ValidatorFactoryResolvedListener implements ListenerInterface
         ];
     }
 
-    public function process(object $event)
+    public function process(object $event): void
     {
         /** @var \Hyperf\Validation\Contract\ValidatorFactoryInterface $validatorFactory */
         $validatorFactory = $event->validatorFactory;
